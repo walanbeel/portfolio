@@ -1,0 +1,318 @@
+*{
+  margin: 0;
+  border: 0;
+}
+
+[class*="col-"]{
+  box-sizing: border-box;
+  float:right;
+
+}
+
+.row::after{
+  content: "";
+  clear:both;
+  display: table;
+}
+
+
+[class*="col-"]{
+  width:100%;
+}
+
+
+
+
+.block{
+  border:3px solid green;
+  height: 300px;
+  width:200px;
+}
+
+
+
+
+
+@media (min-width:600px){
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}    
+}
+
+@media (min-width:768px){
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+}
+
+@media (min-width:992px){
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+}
+
+@media (min-width:1200px){
+  .col-xlg-1 {width: 8.33%;}
+  .col-xlg-2 {width: 16.66%;}
+  .col-xlg-3 {width: 25%;}
+  .col-xlg-4 {width: 33.33%;}
+  .col-xlg-5 {width: 41.66%;}
+  .col-xlg-6 {width: 50%;}
+  .col-xlg-7 {width: 58.33%;}
+  .col-xlg-8 {width: 66.66%;}
+  .col-xlg-9 {width: 75%;}
+  .col-xlg-10 {width: 83.33%;}
+  .col-xlg-11 {width: 91.66%;}
+  .col-xlg-12 {width: 100%;}
+}
+
+.logo {
+background-image: url('../img/Iogo4.png');
+background-size: 100px;
+background-repeat: no-repeat;
+ margin:5px;
+ position: relative;
+ height: 10%;
+ width: 100%;
+  float: left;
+  
+}
+.he{ 
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+ 
+ 
+  
+  background-image: url('../img/1.png');
+  background-repeat: no-repeat;
+  
+  background-position-x: right;
+  background-position-y: -50px;
+   
+}
+.second-lyer{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+ background-color: #000;
+  opacity: .7;
+}
+
+ul{
+  list-style-type: none;
+  margin-top:10px;
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+li{
+  display : inline;
+  font-size: 30px;
+  padding: 15px;
+
+  
+}
+li a{
+  
+  border-radius: 3px;
+  border-color: #ccc;
+  text-decoration:none;
+  color:#fff
+}
+
+.social ul{
+  margin-top: 70vh;
+}
+.social li{
+ 
+  display :block
+}
+
+.head-text{
+  
+position: absolute;
+  color: #fff;
+
+  font-size:15px;
+  top:45vh;
+  
+}
+h1,h3{
+  text-align: center;
+  font-size: 50px;
+}
+
+
+
+
+/* Start Overview*/
+
+.overview{
+  padding: 100px;
+  background-color: #f0f5f7;
+  margin-top: 30px;
+}
+
+
+.overview p{
+  line-height: 2;
+  font-size: 25px;
+  text-align: center;
+  width: 80%;
+  margin:0 auto 15px;
+  color: #6a6a6a;
+ 
+}
+
+
+/* End Overview*/
+
+
+
+.gallery-imges{
+  padding: 100px;
+  margin-bottom: 30px;
+  margin: 0;
+}
+
+
+
+.box1 img{
+  width:20%;
+  height: 150px;
+  margin:0;
+  display: inline-block ;
+  
+  box-sizing: 50;
+  
+}
+.box2 img{
+  width:20%;
+  height: 150px;
+  display: inline-block;
+ 
+  margin:0;
+  box-sizing: 50;
+ 
+}
+.box3 img{
+  width:20%;
+  height: 150px;
+  display: inline-block;
+  
+  margin:0;
+  box-sizing: 50;
+  
+}
+.box4 img{
+  width:20%;
+  height: 150px;
+  display: inline-block;
+  
+  margin:0;
+  box-sizing: 50;
+  
+}
+.box5 img{
+  width:20%;
+  height: 150px;
+  display: inline-block;
+  
+
+  margin:0;
+  box-sizing: 50;
+ 
+}
+.box6 img{
+  width:20%;
+  height: 150px;
+  display:inline-block;
+  
+  margin: 0;
+  box-sizing: 50;
+  
+}
+
+.box7 img{
+  width:20%;
+  height: 150px;
+  display: inline-block;
+  margin: 0;
+  box-sizing: 50;
+
+ 
+}
+
+.box8 img{
+  width:20%;
+  height: 150px;
+  display: inline-block;
+  
+  margin:0;
+  box-sizing: 50;
+  
+  
+}
+
+.overview{
+  padding: 100px;
+  background-color: #f0f5f7;
+}
+
+.services h3{
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #8b8a8a;
+  margin-bottom: 40px;
+}
+
+.services p{
+  line-height: 2;
+  font-size: 30px;
+  width: 80%;
+  text-align: center;
+  margin:0 auto 15px;
+  color: #6a6a6a;
+ 
+}
+
+
+.services button{
+  background-color: #09e439;
+  color: #FFF;
+  padding: 10px 30px;
+  margin: 0;
+  
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #5eeb4c;
+}
