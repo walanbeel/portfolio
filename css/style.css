@@ -1,6 +1,7 @@
 *{
   margin: 0;
   border: 0;
+  
 }
 
 [class*="col-"]{
@@ -136,7 +137,7 @@ ul{
 
 li{
   display : inline;
-  font-size: 30px;
+  font-size: 15px;
   padding: 15px;
 
   
@@ -150,11 +151,13 @@ li a{
 }
 
 .social ul{
-  margin-top: 70vh;
+  margin-top: 50vh;
+  
 }
 .social li{
  
   display :block
+  
 }
 
 .head-text{
@@ -168,7 +171,7 @@ position: absolute;
 }
 h1,h3{
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 
@@ -179,13 +182,13 @@ h1,h3{
 .overview{
   padding: 100px;
   background-color: #f0f5f7;
-  margin-top: 30px;
+  margin-top:0px;
 }
 
 
 .overview p{
   line-height: 2;
-  font-size: 25px;
+  font-size: 15px;
   text-align: center;
   width: 80%;
   margin:0 auto 15px;
@@ -200,7 +203,7 @@ h1,h3{
 
 .gallery-imges{
   padding: 100px;
-  margin-bottom: 30px;
+ /* margin-bottom: 30px;*/
   margin: 0;
 }
 
@@ -209,7 +212,7 @@ h1,h3{
 .box1 img{
   width:20%;
   height: 150px;
-  margin:0;
+  margin:-100px;
   display: inline-block ;
   
   box-sizing: 50;
@@ -220,7 +223,7 @@ h1,h3{
   height: 150px;
   display: inline-block;
  
-  margin:0;
+  margin:-100px;
   box-sizing: 50;
  
 }
@@ -229,7 +232,7 @@ h1,h3{
   height: 150px;
   display: inline-block;
   
-  margin:0;
+  margin:-100px;
   box-sizing: 50;
   
 }
@@ -238,7 +241,7 @@ h1,h3{
   height: 150px;
   display: inline-block;
   
-  margin:0;
+  margin:-100px;
   box-sizing: 50;
   
 }
@@ -248,7 +251,7 @@ h1,h3{
   display: inline-block;
   
 
-  margin:0;
+  margin:-100px;
   box-sizing: 50;
  
 }
@@ -257,7 +260,7 @@ h1,h3{
   height: 150px;
   display:inline-block;
   
-  margin: 0;
+  margin:-100px;
   box-sizing: 50;
   
 }
@@ -266,7 +269,7 @@ h1,h3{
   width:20%;
   height: 150px;
   display: inline-block;
-  margin: 0;
+  margin: -100;
   box-sizing: 50;
 
  
@@ -277,27 +280,29 @@ h1,h3{
   height: 150px;
   display: inline-block;
   
-  margin:0;
+  margin:-100;
   box-sizing: 50;
   
   
 }
 
 .overview{
-  padding: 100px;
+ padding: 100px;
   background-color: #f0f5f7;
 }
 
 .services h3{
-  letter-spacing: 2px;
-  font-weight: normal;
+  letter-spacing: 1px;
+  font-weight:normal;
+  font-size: 20px;
+  direction: ltr;
   color: #8b8a8a;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .services p{
-  line-height: 2;
-  font-size: 30px;
+  line-height: 0.5px;
+  font-size: 15px;
   width: 80%;
   text-align: center;
   margin:0 auto 15px;
@@ -309,10 +314,104 @@ h1,h3{
 .services button{
   background-color: #09e439;
   color: #FFF;
-  padding: 10px 30px;
-  margin: 0;
-  
-  font-size: 20px;
-  font-weight: bold;
+   height:30px; 
+  width:90px; 
+  cursor: pointer;
+  margin-bottom: 10px;
   border: 1px solid #5eeb4c;
+}
+
+
+
+.contact-us{
+  padding: 100px;
+  
+}
+
+.contact-us h2{
+  font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #535353;
+    text-align: left;
+
+}
+
+.contact-us p{
+  line-height: 3;
+  font-size: 15px;
+  width: 80%;
+  text-align: left;
+  float: left;
+  direction: ltr;
+  color: #6a6a6a;
+ 
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  text-align: left;
+  display: block;
+}
+
+label {
+  padding: 10px 10px 10px 0;
+  color: #6a6a6a;
+  float: left;
+  
+}
+
+
+
+input[type=submit] {
+  background-color: #5a9ef7;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin-top: 20px;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-us {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-md-4 {
+  float: left;
+  
+  margin-right: 80px;
+}
+
+.col-md-6 {
+  float: left;
+  
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-md-4,.col-md-6  input[type=submit] {
+    
+    width: 100%;
+    margin-top: 0;
+  }
 }
