@@ -94,29 +94,30 @@
   .col-xlg-12 {width: 100%;}
 }
 
-.logo {
-background-image: url('../img/Iogo4.png');
+.logo h1{
+/*background-image: url('../img/Iogo3.png');
 background-size: 100px;
-background-repeat: no-repeat;
- margin:5px;
+background-repeat: no-repeat;*/
+ margin:5px 0px 0px 20px;
  position: relative;
  height: 10%;
  width: 100%;
   float: left;
+  text-align: left;
+  font-size: 20px;
+  color: #f7f2f2;
   
 }
 .he{ 
-  height: 100vh;
-  max-height: 100vh;
+  height: 150vh;
+  max-height: 200vh;
   position: relative;
- 
- 
   
   background-image: url('../img/1.png');
   background-repeat: no-repeat;
   
   background-position-x: right;
-  background-position-y: -50px;
+  background-position-y: 50px;
    
 }
 .second-lyer{
@@ -124,7 +125,7 @@ background-repeat: no-repeat;
   height: 100%;
   width: 100%;
  background-color: #000;
-  opacity: .7;
+  opacity: .8;
 }
 
 ul{
@@ -151,14 +152,24 @@ li a{
 }
 
 .social ul{
-  margin-top: 50vh;
+  margin-top: 100vh;
   
 }
 .social li{
  
-  display :block
+  display :block;
   
 }
+
+
+.social ul li img:hover{
+    color: #777;
+    margin-left: 20px;
+	background-color:white;
+	cursor: pointer;
+	
+   
+ }
 
 .head-text{
   
@@ -181,7 +192,7 @@ h1,h3{
 
 .overview{
   padding: 100px;
-  background-color: #f0f5f7;
+ background-color: #f2f2f2;
   margin-top:0px;
 }
 
@@ -207,89 +218,22 @@ h1,h3{
   margin: 0;
 }
 
-
-
-.box1 img{
-  width:20%;
-  height: 150px;
-  margin:-100px;
-  display: inline-block ;
-  
-  box-sizing: 50;
-  
-}
-.box2 img{
-  width:20%;
-  height: 150px;
-  display: inline-block;
- 
-  margin:-100px;
-  box-sizing: 50;
- 
-}
-.box3 img{
-  width:20%;
-  height: 150px;
-  display: inline-block;
-  
-  margin:-100px;
-  box-sizing: 50;
-  
-}
-.box4 img{
-  width:20%;
-  height: 150px;
-  display: inline-block;
-  
-  margin:-100px;
-  box-sizing: 50;
-  
-}
-.box5 img{
-  width:20%;
-  height: 150px;
-  display: inline-block;
-  
-
-  margin:-100px;
-  box-sizing: 50;
- 
-}
-.box6 img{
-  width:20%;
-  height: 150px;
-  display:inline-block;
-  
-  margin:-100px;
-  box-sizing: 50;
-  
+.gallery-imges img 
+{
+	display:inline-block ;
+	width:100%;
+	max-width:100%;
+	height:30%;
 }
 
-.box7 img{
-  width:20%;
-  height: 150px;
-  display: inline-block;
-  margin: -100;
-  box-sizing: 50;
 
- 
-}
 
-.box8 img{
-  width:20%;
-  height: 150px;
-  display: inline-block;
-  
-  margin:-100;
-  box-sizing: 50;
-  
-  
-}
 
-.overview{
+
+/*.overview{
  padding: 100px;
   background-color: #f0f5f7;
-}
+}*/
 
 .services h3{
   letter-spacing: 1px;
@@ -312,13 +256,19 @@ h1,h3{
 
 
 .services button{
-  background-color: #09e439;
-  color: #FFF;
+  background-color:  #08526d;
+   color:white;
+  font:bold;
    height:30px; 
-  width:90px; 
+  width:100px; 
+  border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 10px;
-  border: 1px solid #5eeb4c;
+  margin-bottom: 20px;
+  border:  2px solid  #08526d;
+  
+}
+.services button:hover {
+  background-color: #ec1c23;
 }
 
 
@@ -326,22 +276,23 @@ h1,h3{
 .contact-us{
   padding: 100px;
   
+  
 }
 
 .contact-us h2{
-  font-size: 20px;
+  font-size: 23px;
     text-transform: uppercase;
     font-weight: bold;
     color: #535353;
-    text-align: left;
+    text-align: center;
 
 }
 
 .contact-us p{
   line-height: 3;
   font-size: 15px;
-  width: 80%;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   float: left;
   direction: ltr;
   color: #6a6a6a;
@@ -353,8 +304,9 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-  text-align: left;
+ text-align: left;
   display: block;
+  
 }
 
 label {
@@ -367,19 +319,20 @@ label {
 
 
 input[type=submit] {
-  background-color: #5a9ef7;
+  background-color: #08526d;
   color: white;
-  padding: 15px 40px;
+  padding: 15px 30px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 20px 0px 0px 20px;
   float: left;
-  margin-top: 20px;
+  
   
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ec1c23;
 }
 
 .contact-us {
@@ -388,16 +341,12 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-.col-md-4 {
-  float: left;
-  
-  margin-right: 80px;
-}
+
 
 .col-md-6 {
   float: left;
-  
-  margin-top: 6px;
+  width: 40%;
+  margin: 0px  100px 0px 10px;
 }
 
 /* Clear floats after the columns */
@@ -409,7 +358,7 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-md-4,.col-md-6  input[type=submit] {
+  .col-md-6  input[type=submit] {
     
     width: 100%;
     margin-top: 0;
